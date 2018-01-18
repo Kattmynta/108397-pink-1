@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anna Kuleshova](https://up.htmlacademy.ru/adaptive/13/user/108397).
-* Наставник: `Неизвестно`.
+* Наставник: Без наставника.
 
 ---
 
