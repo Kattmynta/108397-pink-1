@@ -1,20 +1,65 @@
-@get-app-bg-color: #1d2631;
-
 .get-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   color: @white;
   line-height: 24px;
-  background-color: @get-app-bg-color;
+
+  background: @get-app-bg-color url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+
+  /*outline: 2px solid green;*/
+}
+
+@media (min-width: @tablet-width) {
+  .get-app {
+    flex-direction: row;
+    /*background: @get-app-bg-color url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;*/
+  }
 }
 
 .get-app__photo-container {
-  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 462px;
   padding: 0;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app__photo-container {
+    order: 2;
+    background: none;
+  }
+}
+
+.get-app__main-photo {
+
 }
 
 .get-app__text-container {
   padding: 25px 20px 30px 20px;
+  background-color: @get-app-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app__text-container {
+    background: none;
+  }
+}
+
+.get-app__slogan {
+  display: none;
+  font-size: 40px; /* TODO real size*/
+  line-height: 1.2;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app__slogan {
+    display: block;
+  }
 }
 
 .get-app__button {
@@ -41,3 +86,16 @@
   color: @white;
   line-height: 24px;
 }
+
+/*.get-app > * {
+  outline: 1px dashed red;
+}
+.get-app > * > * {
+  outline: 1px dashed orange;
+}
+.get-app > * > * > * {
+  outline: 1px dashed yellow;
+}
+.get-app > * > * > * > * {
+  outline: 1px dashed green;
+}*/

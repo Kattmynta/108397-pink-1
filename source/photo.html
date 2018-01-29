@@ -2,17 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк - Фото</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--<title>HTML Academy: Пинк</title>-->
+    <title>Pink - Фото</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-body">
     <header class="page-header">
       <nav class="main-nav">
+        <div class="main-nav__header">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo.svg" width="75" height="24" alt="Pink"/>
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink" />
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -27,11 +30,10 @@
               <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
-    <main class="inner-page">
+    <main class="page-main">
 
       <div class="inner-page-title">
         <h1 class="inner-page-title__text">Фотографии пользователей</h1>
@@ -44,9 +46,7 @@
           <img class="post__picture post__picture--panorama" src="#" width="320" height="137" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Анна</b>
-              <span class="post__time">(5 минут назад)</span>
-            </p>
+              <b>Анна</b> <span class="post__time">(5 минут назад)</span> </p>
             <p class="post__text">
               Прыгать или нет? Напишите свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
@@ -60,9 +60,7 @@
           <img class="post__picture" src="#" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Левон</b>
-              <span class="post__time">(5 часов назад)</span>
-            </p>
+              <b>Левон</b> <span class="post__time">(5 часов назад)</span></p>
             <p class="post__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
@@ -76,9 +74,7 @@
           <img class="post__picture" src="#" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Антон</b>
-              <span class="post__time">(12 часов назад)</span>
-            </p>
+              <b>Антон</b> <span class="post__time">(12 часов назад)</span></p>
             <p class="post__text">
               Соседи будут рады!
             </p>
@@ -92,9 +88,7 @@
           <img class="post__picture" src="#" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Борис</b>
-              <span class="post__time">(20 часов назад)</span>
-            </p>
+              <b>Борис</b> <span class="post__time">(20 часов назад)</span></p>
             <p class="post__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
@@ -108,9 +102,7 @@
           <img class="post__picture" src="#" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Сергей</b>
-              <span class="post__time">(25 часов назад)</span>
-            </p>
+              <b>Сергей</b> <span class="post__time">(25 часов назад)</span></p>
             <p class="post__text">
               Самая кубанская в мире!
             </p>
@@ -124,9 +116,7 @@
           <img class="post__picture" src="#" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Максим</b>
-              <span class="post__time">(40 часов назад)</span>
-            </p>
+              <b>Максим</b> <span class="post__time">(40 часов назад)</span></p>
             <p class="post__text">
               Где снег-то?
             </p>
@@ -140,9 +130,7 @@
           <img class="post__picture" src="#" alt=""/>
           <div class="post__content">
             <p class="post__author">
-              <b>Надежда</b>
-              <span class="post__time">(45 часов назад)</span>
-            </p>
+              <b>Надежда</b> <span class="post__time">(45 часов назад)</span></p>
             <p class="post__text">
               Всем GM и взаимные лайки!
             </p>
@@ -204,11 +192,12 @@
         </li>
       </ul>
       <div class="copyright">
-        Разработано
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo-image" src="#" alt="HTML Academy"/></a>
+        Разработано <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo-image" src="#" alt="HTML Academy" /></a>
       </div>
 
     </footer>
 
+    <script src="js/main.js"></script>
+    
   </body>
 </html>

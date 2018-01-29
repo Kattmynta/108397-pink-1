@@ -2,17 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк - Конкурс</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--<title>HTML Academy: Пинк</title>-->
+    <title>Pink - Конкурс</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-body">
     <header class="page-header">
       <nav class="main-nav">
+        <div class="main-nav__header">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="#" width="75" height="24" alt="Pink"/>
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink" />
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -27,11 +30,10 @@
               <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
-    <main class="inner-page">
+    <main class="page-main">
 
       <div class="inner-page-title">
         <h1 class="inner-page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -42,6 +44,7 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </p>
 
+        <div class="contest-form__fieldset-wrapper">
         <fieldset class="contest-form__fieldset contest-form__fieldset--name">
           <legend class="visually-hidden">Представьтесь, пожалуйста</legend>
           <p>
@@ -56,7 +59,8 @@
             <label class="contest-form__label contest-form__label--pink" for="middle-name-id">Отчество:</label>
             <input class="contest-form__text-input" id="middle-name-id" name="middle-name" type="text" placeholder="Ну и отчество тоже"/>
           </p>
-          <p></fieldset>
+            <p>
+          </fieldset>
 
           <fieldset class="contest-form__fieldset contest-form__fieldset--achievements">
             <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
@@ -121,9 +125,7 @@
           </fieldset>
 
           <input class="contest-form__button" type="submit" value="Отправить форму"/>
-          <p class="contest-form__text">
-            <span class="contest-form__text--star">*</span>
-            - обязательные поля</p>
+          <p class="contest-form__text"><span class="contest-form__text--star">*</span> - обязательные поля</p>
         </form>
 
         <section class="popup popup--fail hidden">
@@ -160,11 +162,12 @@
           </li>
         </ul>
         <div class="copyright">
-          Разработано
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo-image" src="#" alt="HTML Academy"/></a>
+          Разработано <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo-image" src="#" alt="HTML Academy"/></a>
         </div>
 
       </footer>
+
+    <script src="js/main.js"></script>
 
     </body>
   </html>
