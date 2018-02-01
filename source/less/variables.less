@@ -1,20 +1,43 @@
 @white: white;
 @black: black;
-@header-bg-color: rgba(0, 127, 127, 0.3);
+@header-bg-color: rgba(127, 127, 127, 0.5);
 /*@header-bg-color: rgba(0, 0, 0, 0.3);*/
 @blue: #283645;
-@grey: #f2f2f2;
+/*TODO: @grey: #f2f2f2;*/
+@grey: #d2d2d2; /* TODO: убрать. Введен потому что заслуженный моник не отличает #f2f2f2 от белого */
 @pink: #d22856;
 @green: #2aab6d;
 @get-app-bg-color: #1d2631;
 
 @mobile-width: 320px;
+@mobile-maxwidth: 659px; /* TODO */
 @tablet-width: 660px;
+@tablet-maxwidth: 1199px;
 @desktop-width: 1200px;
-@mobile-only-width: 659px;
+@mobile-only-width: 659px; 
 
-@page-header-logo-height: 24px;
-@main-nav-padding-top: 20px;
-@main-nav-padding-bottom: 24px;
+@mainlogo-height-mobile: 24px;
+@mainnav-padding-top-mobile: 20px;
+@mainnav-padding-bottom-mobile: 24px;
 
-@main-nav-header-height: 0 - @page-header-logo-height - @main-nav-padding-top - @main-nav-padding-bottom;
+@mainlogo-height-tablet: 30px;
+@mainnav-padding-top-tablet: 25px;
+@mainnav-padding-bottom-tablet: 25px;
+
+@mainlogo-height-desktop: 40px;
+@mainnav-padding-top-desktop: 40px;
+@mainnav-padding-bottom-desktop: 40px;
+
+@header-size-mobile: @mainlogo-height-mobile + @mainnav-padding-top-mobile + @mainnav-padding-bottom-mobile;
+
+@header-shift-mobile: 0 - @header-size-mobile;
+
+@header-size-tablet: @mainlogo-height-tablet + @mainnav-padding-top-tablet + @mainnav-padding-bottom-tablet;
+@header-shift-tablet: 0 - @header-size-tablet;
+
+@header-size-desktop: @mainlogo-height-desktop + @mainnav-padding-top-desktop + @mainnav-padding-bottom-desktop;
+@header-shift-desktop: 0 - @header-size-desktop;
+
+@getapp-bg-height-mobile: 462px;
+@getapp-bg-height-tablet: 500px;
+@getapp-bg-height-desktop: 550px;

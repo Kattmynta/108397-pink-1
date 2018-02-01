@@ -1,4 +1,6 @@
 .review {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 }
@@ -10,6 +12,28 @@
   line-height: 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .review__author {
+    order: 2;
+  }
+}
+
+.review__author-info {
+  order: 3;
+}
+
+@media (max-width: @mobile-only-width) {
+  .review__author-info {
+    display: none;
+  }
+}
+
 .review__text {
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .review__text {
+    order: 1;
+  }
 }

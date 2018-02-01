@@ -7,32 +7,32 @@
     <title>Pink</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-    <body class="index-body">
+  <body class="index-body">
 
-      <header class="page-header">
-        <nav class="main-nav">
+    <header class="page-header">
+      <nav class="main-nav">
         <div class="main-nav__header">
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink" />
           </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
         </div>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-        </nav>
-      </header>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
       <main class="page-main">
 
@@ -83,15 +83,15 @@
                 <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-          <div class="advantages__pic-container">
-            <img class="advantages__pic" src="#" alt=""/>
-          </div>
+          <!-- <div class="advantages__pic-container"> -->
+            <!-- <img class="advantages__pic" src="#" alt=""/> -->
+          <!-- </div> -->
         </div>
       </section>
-      <section class="research">
-        <h2 class="research__title">Эффект на 24 часа</h2>
-        <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="research__link" href="#">Узнать больше об исследовании</a>
+        <section class="research">
+          <h2 class="research__title">Эффект на 24 часа</h2>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
         </section>
 
         <section class="reviews-block">
@@ -100,21 +100,24 @@
           <input class="visually-hidden" id="reviews-btn-2" name="reviews-toggle" type="radio"/>
           <input class="visually-hidden" id="reviews-btn-3" name="reviews-toggle" type="radio"/>
           <ul class="review-slider">
-            <li class="review-slider__item">
+            <li class="review-slider__item review-slider__item--active">
               <blockquote class="review">
                 <h3 class="review__author">Николай Петров</h3>
+                <p class="review__author-info">25 лет, водитель трамвая</p>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </li>
             <li class="review-slider__item">
               <blockquote class="review">
                 <h3 class="review__author">Николай Петров</h3>
+                <p class="review__author-info">25 лет, водитель трамвая</p>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </li>
             <li class="review-slider__item">
               <blockquote class="review">
                 <h3 class="review__author">Николай Петров</h3>
+                <p class="review__author-info">25 лет, водитель трамвая</p>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </li>
@@ -133,24 +136,24 @@
           <input class="visually-hidden" id="price-btn-3" name="price-toggle" type="radio"/>
           <div class="price-slider">
             <section class="price-item">
-            <h2 class="price-item__title price-item__title--hit">
-              База<br />
-              <span class="price-item__price">1,99 USD</span>
-            </h2>
-            <div class="price-item__table">
-              <p class="price-item__feature">
-                <span class="price-item__text price-item__text--first">Розовый фильтр</span>
-                <span class="price-item__check-icon price-item__check-icon--yes">доступен</span>
-              </p>
-              <p class="price-item__feature">
-                <span class="price-item__text price-item__text--first">Смайлики</span>
-                <span class="price-item__check-icon price-item__check-icon--no">не доступны</span>
-              </p>
-              <p class="price-item__feature">
-                <span class="price-item__text price-item__text--first">Комментарии</span>
-                <span class="price-item__check-icon price-item__check-icon--no">не доступны</span>
-              </p>
-            </div>
+              <h2 class="price-item__title price-item__title--hit">
+                База<br />
+                <span class="price-item__price">1,99 USD</span>
+              </h2>
+              <div class="price-item__table">
+                <p class="price-item__feature">
+                  <span class="price-item__text price-item__text--first">Розовый фильтр</span>
+                  <span class="price-item__check-icon price-item__check-icon--yes">доступен</span>
+                </p>
+                <p class="price-item__feature">
+                  <span class="price-item__text price-item__text--first">Смайлики</span>
+                  <span class="price-item__check-icon price-item__check-icon--no">не доступны</span>
+                </p>
+                <p class="price-item__feature">
+                  <span class="price-item__text price-item__text--first">Комментарии</span>
+                  <span class="price-item__check-icon price-item__check-icon--no">не доступны</span>
+                </p>
+              </div>
             </section>
             <section class="price-item">
             <h2 class="price-item__title price-item__title--hit">
