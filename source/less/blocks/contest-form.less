@@ -50,10 +50,12 @@
 @media (min-width: @tablet-width) {
   .contest-form__fieldset--app {
     order: 1;
+    background-color: @white;
   }
 
   .contest-form__fieldset--achievements {
     order: 3;
+    background-color: @white;
   }
 }
 
@@ -129,6 +131,7 @@
 }
 
 .contest-form__button {
+  width: 280px;
   margin: 50px 20px 40px;
   font-size: 18px;
   font-weight: bold;
@@ -138,6 +141,18 @@
   border: none;
 }
 
-.contest-form__text {
+@media (min-width: @desktop-width) {
+  .contest-form__button {
+    margin-left: 130px;
+  }
+}
+
+.contest-form__footnote {
   margin: 0 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .contest-form__footnote {
+    margin-left: 130px;
+  }
 }
