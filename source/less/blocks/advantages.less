@@ -28,7 +28,7 @@
   padding: 85px 20px 300px 20px;
   background-color: @grey;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -36,7 +36,7 @@
     bottom: 0;
     width: 157px;
     height: 280px;
-    background: @grey url(../img/iphone-screen-mobile@1x.png) center top no-repeat;
+    background: @grey url("../img/iphone-screen-mobile@1x.png") center top no-repeat;
   }
 }
 
@@ -46,7 +46,7 @@
     min-height: 480px;
     padding: 85px 0 0 0;
 
-    &:after {
+    &::after {
       left: 0;
       bottom: 0;
       margin-left: 20px;
@@ -61,7 +61,7 @@
     width: @desktop-width;
     padding: 0;
 
-    &:after {
+    &::after {
       width: 0;
       height: 0;
       background: none;
@@ -99,7 +99,7 @@
     width: 330px;
     padding-top: 300px; /* pic 190*300*/
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       left: 50%;
@@ -107,7 +107,7 @@
       top: 0;
       width: 157px;
       height: 280px;
-      background: @grey url(../img/iphone-screen-mobile@1x.png) center top no-repeat;
+      background: @grey url("../img/iphone-screen-mobile@1x.png") center top no-repeat;
     }
   }
 }
