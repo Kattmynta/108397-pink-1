@@ -1,20 +1,103 @@
-@get-app-bg-color: #1d2631;
-
 .get-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: @header-size-mobile;
   color: @white;
   line-height: 24px;
-  background-color: @get-app-bg-color;
+  background: @get-app-bg-color url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app {
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    width: @tablet-width;
+    padding-top: @header-size-tablet;
+    background: @get-app-bg-color url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .get-app {
+    width: @desktop-width;
+    padding-top: @header-size-desktop;
+    background: @get-app-bg-color url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+  }
 }
 
 .get-app__photo-container {
-  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /*width: 100%;*/
+  min-height: calc(@getapp-bg-height-mobile - @header-size-mobile);
   padding: 0;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app__photo-container {
+    left: -100px;
+    order: 2;
+    width: 500px;
+    min-height: calc(@getapp-bg-height-tablet - @header-size-tablet);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .get-app__photo-container {
+    left: 0;
+    min-height: calc(@getapp-bg-height-desktop - @header-size-desktop);
+  }
+}
+
+/*.get-app__main-photo {
+
+}*/
+
+@media (min-width: @tablet-width) {
+  .get-app__main-photo {
+    /*left: -200px;*/
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .get-app__main-photo {
+    left: 0;
+  }
 }
 
 .get-app__text-container {
+  position: relative;
+  z-index: 1;
+  left: 0;
   padding: 25px 20px 30px 20px;
+  background-color: @get-app-bg-color;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app__text-container {
+    order: 1;
+    width: 500px;
+    background: none;
+  }
+}
+
+.get-app__slogan {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app__slogan {
+    display: block;
+    font-size: 40px; /*TODO real size*/
+    line-height: 1.2;
+  }
 }
 
 .get-app__button {
@@ -41,3 +124,19 @@
   color: @white;
   line-height: 24px;
 }
+
+/*.get-app {
+  outline: 2px solid black;
+}
+.get-app > * {
+  outline: 1px dashed red;
+}
+.get-app > * > * {
+  outline: 1px dashed orange;
+}
+.get-app > * > * > * {
+  outline: 1px dashed yellow;
+}
+.get-app > * > * > * > * {
+  outline: 1px dashed green;
+}*/

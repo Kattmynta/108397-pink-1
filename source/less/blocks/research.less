@@ -1,0 +1,22 @@
+.research {
+  display: block;
+  width: @tablet-width - 20px - 325px;
+  /*padding-left: 325px;*/
+  margin: 0 auto;
+  padding: 1px 0 20px 325px;
+  background: @white;
+}
+
+@media (max-width: @mobile-maxwidth) {
+  .research {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    width: @desktop-width - 120px*2;
+    padding: 1px 120px 0;
+    background-color: @grey;
+  }
+}

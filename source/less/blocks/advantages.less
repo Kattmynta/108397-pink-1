@@ -1,5 +1,19 @@
 .advantages {
+  width: @mobile-width;
+  margin: 0 auto;
   margin-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: @desktop-width;
+  }
 }
 
 .advantages__title {
@@ -9,14 +23,93 @@
 }
 
 .advantages__wrapper {
+  position: relative;
+  width: @mobile-width - 20px*2;
+  padding: 85px 20px 300px 20px;
   background-color: @grey;
-  padding: 85px 20px 20px 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -(157px/2);
+    bottom: 0;
+    width: 157px;
+    height: 280px;
+    background: @grey url("../img/iphone-screen-mobile@1x.png") center top no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    width: @tablet-width;
+    min-height: 480px;
+    padding: 85px 0 0 0;
+
+    &::after {
+      left: 0;
+      bottom: 0;
+      margin-left: 20px;
+      width: 270px;
+      height: 480px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    width: @desktop-width;
+    padding: 0;
+
+    &::after {
+      width: 0;
+      height: 0;
+      background: none;
+    }
+  }
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    margin-left: 325px;
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    position: relative;
+    width: 330px;
+    padding-top: 300px; /* pic 190*300*/
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -(157px/2);
+      top: 0;
+      width: 157px;
+      height: 280px;
+      background: @grey url("../img/iphone-screen-mobile@1x.png") center top no-repeat;
+    }
+  }
 }
 
 .advantages__item-title {

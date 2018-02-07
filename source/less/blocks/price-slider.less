@@ -1,0 +1,27 @@
+/*.price-slider {
+
+}*/
+
+.price-slider__wrapper {
+  overflow: hidden;
+}
+
+.price-slider__list {
+  display: flex;
+  width: @mobile-width * 3;
+  transform: translateX((@mobile-width - @price-item-mobile-width) / 2 - @price-item-mobile-width);
+}
+
+@media (min-width: @tablet-width) {
+  .price-slider__list {
+    /*width: @tablet-width;*/
+    width: auto;
+    transform: none;
+  }
+}
+
+/*@media (min-width: @desktop-width) {
+  .price-slider__list {
+    width: @desktop-width;
+  }
+}*/
