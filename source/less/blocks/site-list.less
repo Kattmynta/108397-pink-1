@@ -2,6 +2,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: @blue;  
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    background: none;
+  }
 }
 
 .site-list__item {
@@ -19,6 +26,7 @@
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;  
 
   &:hover {
     color: @pink;
@@ -32,5 +40,13 @@
     &:hover {
       color: @white;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    border: none;
+    font-weight: normal;
+    text-transform: none;
   }
 }

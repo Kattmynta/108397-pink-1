@@ -5,12 +5,11 @@
   margin: 0 auto;
   margin-bottom: @header-shift-mobile;
   padding: 0;
-  text-transform: uppercase;
   color: @white;
-  background-color: @header-bg-color;
-
-  &--full {
-    background-color: @blue;
+  background-color: @blue;
+  
+  &--minimized {
+    background-color: @header-bg-color;
   }
 
   &--nojs  {
@@ -20,7 +19,7 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: @tablet-width;
-    padding: 0 100px;
+    padding: 0;
     margin-bottom: @header-shift-tablet;
   }
 }
