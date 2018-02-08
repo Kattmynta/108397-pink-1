@@ -11,9 +11,10 @@
   &--minimized {
     background-color: @header-bg-color;
   }
+}
 
-  &--nojs  {
-  }
+.page-header--nojs .main-nav__toggle {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,6 +30,7 @@
     width: @desktop-width - 120px*2;
     padding: 0 120px;
     margin-bottom: @header-shift-desktop;
+    background-color: @header-bg-color;
   }
 }
 

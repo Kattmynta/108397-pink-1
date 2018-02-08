@@ -8,15 +8,18 @@ header.classList.add("page-header--minimized");
 menu.classList.remove("main-nav__list--nojs");
 menu.classList.add("main-nav__list--minimized");
 menuHeader.classList.add("main-nav__header--minimized");
+toggle.classList.add("main-nav__toggle--minimized");
 
 toggle.addEventListener("click", function(event) {
   event.preventDefault();
   if (menu.classList.contains("main-nav__list--minimized")) {
+    toggle.classList.remove("main-nav__toggle--minimized");
     header.classList.remove("page-header--minimized");
     menu.classList.remove("main-nav__list--minimized");
     menuHeader.classList.remove("main-nav__header--minimized");
   }
   else {
+    toggle.classList.add("main-nav__toggle--minimized");
     header.classList.add("page-header--minimized");
     menu.classList.add("main-nav__list--minimized");
     menuHeader.classList.add("main-nav__header--minimized");
