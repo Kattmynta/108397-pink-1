@@ -3,6 +3,7 @@
   z-index: 0;
   width: @mobile-width;
   margin: 0 auto;
+  margin-top: @header-shift-mobile;
   padding: 0;
 }
 
@@ -15,5 +16,32 @@
 @media (min-width: @desktop-width) {
   .page-main {
     width: @desktop-width;
+  }
+}
+
+
+
+
+/*delete!*/
+.page-main__test {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: @mobile-width;
+  height: 100px;
+  margin-top: 200px;
+  background-color: @blue;
+
+  &::before {
+    content: "";
+    z-index: 0;
+    top: -30px;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: @mobile-width;
+    height: 50px;
+    transform: skewY(-5deg);
+    background-color: @blue;
   }
 }

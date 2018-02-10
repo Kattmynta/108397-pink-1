@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <div class="main-nav__header">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Pink"/>
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"/>
           </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
         </div>
@@ -30,9 +30,9 @@
           <li class="site-list__item">
             <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
-          <!-- <li class="site-list__item"> -->
-            <!-- <a class="site-list__link" href="test.html">Тест</a> -->
-          <!-- </li>           -->
+          <!--<li class="site-list__item">
+            <a class="site-list__link" href="test.html">Тест</a>
+          </li>-->
         </ul>
       </nav>
     </header>
@@ -44,7 +44,7 @@
       <section class="get-app">
         <div class="get-app__photo-container">
           <!-- TODO заменить на picture -->
-          <img class="get-app__main-photo" src="img/iphone-hand-mobile@1x.png" alt=""/>
+          <!-- <img class="get-app__main-photo" src="img/iphone-hand-mobile@1x.png" alt=""/> -->
         </div>
         <div class="get-app__text-container">
           <p class="get-app__slogan">
@@ -98,27 +98,27 @@
         <a class="research__link" href="#">Узнать больше об исследовании</a>
       </section>
 
-      <section class="reviews-block">
+      <section class="reviews-block slider">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
-        <input class="visually-hidden" id="reviews-btn-1" name="reviews-toggle" type="radio" checked/>
-        <input class="visually-hidden" id="reviews-btn-2" name="reviews-toggle" type="radio"/>
-        <input class="visually-hidden" id="reviews-btn-3" name="reviews-toggle" type="radio"/>
-        <ul class="review-slider">
-          <li class="review-slider__item review-slider__item--active">
+        <input class="visually-hidden slider__toggle slider__toggle--active" id="reviews-btn-1" name="reviews-toggle" type="radio" checked/>
+        <input class="visually-hidden slider__toggle" id="reviews-btn-2" name="reviews-toggle" type="radio"/>
+        <input class="visually-hidden slider__toggle" id="reviews-btn-3" name="reviews-toggle" type="radio"/>
+        <ul class="review-block__list slider__list">
+          <li class="reviews-block__item reviews-block__item--active slider__item slider__item--active">
             <blockquote class="review">
               <h3 class="review__author">Николай Петров</h3>
               <p class="review__author-info">25 лет, водитель трамвая</p>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="review-slider__item">
+          <li class="reviews-block__item slider__item">
             <blockquote class="review">
               <h3 class="review__author">Николай Петров</h3>
               <p class="review__author-info">25 лет, водитель трамвая</p>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
-          <li class="review-slider__item">
+          <li class="reviews-block__item slider__item">
             <blockquote class="review">
               <h3 class="review__author">Николай Петров</h3>
               <p class="review__author-info">25 лет, водитель трамвая</p>
@@ -126,10 +126,10 @@
             </blockquote>
           </li>
         </ul>
-        <div class="review-slider__controls slider-controls">
-          <label for="reviews-btn-1"></label>
-          <label for="reviews-btn-2"></label>
-          <label for="reviews-btn-3"></label>
+        <div class="reviews-block__controls-list slider__controls-list">
+          <label class="slider__controls-item slider__controls-item--active" for="reviews-btn-1"></label>
+          <label class="slider__controls-item" for="reviews-btn-2"></label>
+          <label class="slider__controls-item" for="reviews-btn-3"></label>
         </div>
       </section>
 
@@ -202,7 +202,7 @@
             </section>
           </div>
         </div>
-        <div class="price-slider__controls slider-controls">
+        <div class="price-slider__controls slider__controls-list">
           <label for="price-btn-1"></label>
           <label for="price-btn-2"></label>
           <label for="price-btn-3"></label>
@@ -258,7 +258,7 @@
 
     </footer>
 
-    <script src="js/main.js"></script>
+    <!--<script src="js/main.js"></script>-->
 
   </body>
 </html>

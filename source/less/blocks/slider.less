@@ -1,0 +1,40 @@
+.slider {
+  width: 100%;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.slider__controls-list {
+  display: block;
+  width: 70px;
+  height: 25px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.slider__controls-item {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: darkgrey;
+  border: 3px solid @white;
+  border-radius: 50%;
+  margin-right: 13px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    background-color: @white;
+    border: 3px solid @black;
+  }
+}

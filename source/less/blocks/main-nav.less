@@ -16,10 +16,11 @@
   display: flex;
   justify-content: space-between;
   width: @mobile-width - 20px*2;
-  padding: @mainnav-padding-top-mobile 20px @mainnav-padding-bottom-mobile;
+  padding: @mainnav-padding-top-mobile 20px @mainnav-padding-bottom-mobile+1;
   border-bottom: 1px solid @black;
-  
+
   &--minimized {
+    padding-bottom: @mainnav-padding-bottom-mobile;
     border: none;
   }
 }
@@ -27,7 +28,7 @@
 @media (min-width: @tablet-width) {
   .main-nav__header {
     width: @tablet-width - 20px*2;
-    padding: 25px 20px 30px;   
+    padding: @mainnav-padding-top-tablet 20px @mainnav-padding-bottom-tablet;
   }
 }
 
@@ -80,7 +81,7 @@
     width: 50px;
     height: 24px;
     background-image: url("../img/icon-menu-burger.svg");
-  }  
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -95,6 +96,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 100%;
+
 
   &--minimized {
     display: none;
